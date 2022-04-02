@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { ModalSingup } from './components/ModalSingup';
+import { ModalSignup } from './components/ModalSingup';
 import logo from './images/logo.png';
 import './styles/home.css';
 
 function App() {
 
-  const [showModalSingup, setShowModalSignup] = useState(false);
+  const [showModalSignup, setShowModalSignup] = useState(false);
 
-  const openModalSingup = () => {
+  const openModalSignup = () => {
     setShowModalSignup(prev => !prev);
   }
 
@@ -15,12 +15,12 @@ function App() {
     <div className='home-background'>
       <img alt="logo" className="logo" src={ logo } />
       <button
-          className="singup-button"
-          onClick={ openModalSingup }
+          className="signup-button"
+          onClick={ openModalSignup }
         >
           Signup
         </button>
-        <ModalSingup showModal={showModalSingup} />
+        <ModalSignup showModal={showModalSignup} />
     </div>
   );
 }
