@@ -1,0 +1,16 @@
+.home-background {
+align-items: center;
+display: flex;
+flex-direction: column;
+position: absolute;
+width: 1920px;
+height: 1000px;
+justify-content: center;
+background: #FFFFFF;
+}
+
+.logo {
+  position: absolute;
+  width: 607.5px;
+  height: 167px;
+}

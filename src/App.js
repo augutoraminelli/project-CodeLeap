@@ -1,9 +1,11 @@
+import logo from './images/logo.png';
+import './styles/home.css';
 
 function App() {
   return (
-    < >
-      <h1> Hello World! Let`s Start Project </h1>
-    </>
+    <div className='home-background'>
+      <img alt="logo" className="logo" src={ logo } />
+    </div>
   );
 }
 
