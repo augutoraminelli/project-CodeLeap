@@ -1,10 +1,21 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addPost } from '../actions';
 import '../styles/newPost.css';
 
 function NewPost() {
 
+  const dispatch = useDispatch();
+
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
+
+  const addNewPost = (e) => {
+    e.preventDefault();
+    dispatch(addPost({ title, content }));
+    setTitle('');
+    setContent('');
+  }
 
   const validTitleField = () => {
     const MIN_TITLE = 1;
@@ -19,7 +30,7 @@ function NewPost() {
   return (
     <div className="ctn-newpost">
       <h2 className='ctn-title'>What’s on your mind?</h2>
-      <form className="newpost-form">
+      <form className="newpost-form" onSubmit={ addNewPost }>
         <h3 className="newpost-title">Title</h3>
         <input
           name="newpost-title-input"
