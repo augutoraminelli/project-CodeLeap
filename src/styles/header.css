@@ -1,7 +1,7 @@
 .ctn-header {
+  align-items: center;
   width: 800px;
   height: 80px;
-  left: 560px;
   top: 0px;
   background: #000000;
 }

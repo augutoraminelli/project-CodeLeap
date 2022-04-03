@@ -1,0 +1,90 @@
+.ctn-newpost {
+  width: 723px;
+  height: 349px;
+  left: 598px;
+  top: 124px;
+  background: #FFFFFF;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.ctn-title {
+  width: 299px;
+  height: 22px;
+  left: 628px;
+  top: 147px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.newpost-title {
+  width: 32px;
+  height: 19px;
+  left: 629px;
+  top: 203px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.newpost-title-input {
+  width: 32px;
+  height: 19px;
+  left: 629px;
+  top: 203px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.newpost-content {
+  position: absolute;
+  width: 57px;
+  height: 19px;
+  left: 629px;
+  top: 276px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.newpost-content-input {
+  width: 659px;
+  height: 74px;
+  left: 628px;
+  top: 302px;
+  background: #FFFFFF;
+  border: 1px solid #777777;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.newpost-btn {
+  width: 111px;
+  height: 33px;
+  left: 1176px;
+  top: 411px;
+  background: #000000;
+  color: #FFFFFF;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}

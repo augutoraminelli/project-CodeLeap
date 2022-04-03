@@ -1,9 +1,12 @@
 import React from 'react'
+import Header from '../components/Header'
+import NewPost from '../components/NewPost'
 
 function MainScreen() {
   return (
     <div>
-      <h1> MainScreen </h1>
+      <Header />
+      <NewPost />
     </div>
   )
 }
