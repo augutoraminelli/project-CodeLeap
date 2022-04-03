@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-.header-postcard {
+.ctn-header-postcard {
   width: 723px;
   height: 70px;
   left: 598px;
@@ -24,4 +24,14 @@
   color: #FFFFFF;
   align-items: center;
   display: flex;
+}
+
+.ctn-content-card {
+  width: 723px;
+  height: 328px;
+  left: 598px;
+  top: 507px;
+  background: #FFFFFF;
+  border: 1px solid #999999;
+  box-sizing: border-box;
 }

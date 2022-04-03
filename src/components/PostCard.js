@@ -7,8 +7,12 @@ function PostCard({ post, i }) {
   console.log(post);
     return (
       <div className='ctn-postcard'>
-        <h2 className='header-postcard'>{ title }</h2>
-        <p className='content card'>{ content }</p>
+        <div className='ctn-header-postcard'>
+          <h2 className='header-title'>{ title }</h2>
+        </div>
+        <div className='ctn-content-card'>
+           <p className='content-card'>{ content }</p>
+        </div>
       </div>
     )
   }
