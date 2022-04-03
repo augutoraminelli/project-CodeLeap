@@ -1,13 +1,3 @@
-.modal-signup-background {
-  /* width: 500px;
-  height: 220px;
-  left: 710px;
-  top: 420px;
-  background: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  box-sizing: border-box; */
-}
-
 .modal-signup {
   position: absolute;
   width: 500px;
@@ -73,4 +63,14 @@
   top: 584px;
   background: #000000;
   color: #FFFFFF;  
+}
+
+.modal-signup-btn:hover {
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.modal-signup-btn:disabled {
+  background: #707070;
+  color: #7d7d7d;
 }

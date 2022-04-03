@@ -1,27 +1,12 @@
-import { useState } from 'react';
-import { ModalSignup } from './components/ModalSingup';
-import logo from './images/logo.png';
-import './styles/home.css';
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { SignUp } from './pages';
 
 function App() {
-
-  const [showModalSignup, setShowModalSignup] = useState(false);
-
-  const openModalSignup = () => {
-    setShowModalSignup(prev => !prev);
-  }
-
   return (
-    <div className='home-background'>
-      <img alt="logo" className="logo" src={ logo } />
-      <button
-          className="signup-button"
-          onClick={ openModalSignup }
-        >
-          Signup
-        </button>
-        <ModalSignup showModal={showModalSignup} />
-    </div>
+    <BrowserRouter>
+      <SignUp />
+    </BrowserRouter>
   );
 }
 

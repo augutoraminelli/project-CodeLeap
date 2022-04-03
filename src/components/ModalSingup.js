@@ -1,24 +1,37 @@
 import React, { useState } from "react";
+// import { useNavigate } from 'react-router-dom';
+import INITIAL_LOCAL_STORAGE from "../data";
 import '../styles/modal.css';
 
 //create modal component
 export function ModalSignup({ showModal }) {
+  // const navigate = useNavigate();
 
   const [username, setUsername] = useState('');
 
+  const handleClick = async (e) => { 
+    e.preventDefault();
+  
+    INITIAL_LOCAL_STORAGE.forEach(({ key, value }) => (key === 'username'
+      ? localStorage.setItem('username', JSON.stringify({ username }))
+      : localStorage.setItem(key, JSON.stringify(value))));
+
+    // navigate('/main-page');
+  }
+
   const validUsernameField = () => {
-    const MIN_USERNMAE_LENGTH = 1;
-    return username.length >= MIN_USERNMAE_LENGTH;
+    const MIN_USERNMAE = 1;
+    return username.length >= MIN_USERNMAE;
   }
 
   return (
       <div>
         { showModal ? (
           <div className="modal-signup-background">
-            <div className="modal-signup">
+            <form className="modal-signup" onSubmit={ handleClick }>
               <h2 className="modal-signup-title"> Welcome to CodeLeap network! </h2>
               <h3 className="modal-signup-username"> Please enter your username </h3>
-              <input 
+              <input
                 name="username"
                 className="modal-signup-input"
                 type="text"
@@ -33,7 +46,7 @@ export function ModalSignup({ showModal }) {
                 >
                 ENTER 
               </button>
-            </div>
+            </form>
           </div>
         ) : null }
       </div>
