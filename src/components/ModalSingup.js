@@ -52,3 +52,5 @@ export function ModalSignup({ showModal }) {
       </div>
   );
 }
+
+// TODO - fixed setItem username to localStorage
