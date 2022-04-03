@@ -5,6 +5,7 @@ import PostCard from './PostCard';
 function PostList() {
 
   const posts = useSelector(state => state.posts);
+  console.log(posts);
 
   return (
     <div>
