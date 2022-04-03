@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/newPost.css';
 
 function NewPost() {
+
+  const [title, setTitle] = useState('');
+  const [content, setContent] = useState('');
+
+  const validTitleField = () => {
+    const MIN_TITLE = 1;
+    return title.length >= MIN_TITLE;
+  }
+
+  const validContentField = () => {
+    const MIN_USERNMAE = 1;
+    return content.length >= MIN_USERNMAE;
+  }
+
   return (
     <div className="ctn-newpost">
       <h2 className='ctn-title'>What’s on your mind?</h2>
@@ -12,8 +26,8 @@ function NewPost() {
           className="newpost-title-input"
           type="text"
           placeholder="Hello world"
-          // onChange={(e) => setUsername(e.target.value)}
-          // value = { title }
+          onChange={(e) => setTitle(e.target.value)}
+          value = { title }
         />
         <h3 className="newpost-content">Content</h3>
         <input
@@ -21,12 +35,12 @@ function NewPost() {
           className="newpost-content-input"
           type="textarea"
           placeholder="Content here"
-          // onChange={(e) => setUsername(e.target.value)}
-          // value = { content }
+          onChange={(e) => setContent(e.target.value)}
+          value = { content }
         />
         <button 
           className="newpost-btn"
-          // disabled={ !validUsernameField() }
+          disabled={ !validTitleField() || !validContentField() }
           type="submit"
           >
           CREATE 
