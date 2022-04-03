@@ -21,6 +21,12 @@ function PostCard({ post, i }) {
       <div className='ctn-postcard'>
         <div className='ctn-header-postcard'>
           <h2 className='header-title'>{ title }</h2>
+          <input
+            alt='delete-btn'
+            className='delete-btn'
+            type='image'
+            src='https://img.icons8.com/ios-filled/50/000000/delete-sign.png'
+          />
         </div>
         <div className='ctn-content-card'>
           <span>{ username }</span>

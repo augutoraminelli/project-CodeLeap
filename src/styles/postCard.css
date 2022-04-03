@@ -9,6 +9,9 @@
 }
 
 .ctn-header-postcard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 723px;
   height: 70px;
   left: 598px;
@@ -34,4 +37,12 @@
   background: #FFFFFF;
   border: 1px solid #999999;
   box-sizing: border-box;
+}
+
+.delete-btn {
+  left: 20.83%;
+  right: 20.83%;
+  top: 12.5%;
+  bottom: 12.5%;
+  background: #FFFFFF;
 }
