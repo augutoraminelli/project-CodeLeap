@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-// import { useNavigate } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import INITIAL_LOCAL_STORAGE from "../data";
 import '../styles/modal.css';
 
 //create modal component
 export function ModalSignup({ showModal }) {
-  // const navigate = useNavigate();
+  const navigate = useHistory();
 
   const [username, setUsername] = useState('');
 
@@ -16,7 +16,7 @@ export function ModalSignup({ showModal }) {
       ? localStorage.setItem('username', JSON.stringify({ username }))
       : localStorage.setItem(key, JSON.stringify(value))));
 
-    // navigate('/main-page');
+    navigate.push('/main-page');
   }
 
   const validUsernameField = () => {
