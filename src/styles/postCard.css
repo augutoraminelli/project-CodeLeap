@@ -1,0 +1,27 @@
+.ctn-postcard {
+  width: 723px;
+  height: 328px;
+  left: 598px;
+  top: 507px;
+  background: #FFFFFF;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+}
+
+.header-postcard {
+  width: 723px;
+  height: 70px;
+  left: 598px;
+  top: 508px;
+  background: #000000;
+  left: 628px;
+  top: 532px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  align-items: center;
+  display: flex;
+}
