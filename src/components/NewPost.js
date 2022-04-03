@@ -12,7 +12,7 @@ function NewPost() {
 
   const addNewPost = (e) => {
     e.preventDefault();
-    dispatch(addPost({ title, content }));
+    dispatch(addPost({ title, content, createdAt: new Date() }));
     setTitle('');
     setContent('');
   }
